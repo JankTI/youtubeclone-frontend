@@ -1,8 +1,13 @@
 {
   "compilerOptions": {
+    "plugins": [
+      {
+        "name": "ts-vue-plugin"
+      }
+    ],
     "target": "esnext",
     "module": "esnext",
-    "strict": true,
+    "strict": false,
     "jsx": "preserve",
     "moduleResolution": "node",
     "skipLibCheck": true,
@@ -11,15 +16,15 @@
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
     "sourceMap": true,
-    "baseUrl": ".",
-    "types": [
-      "webpack-env"
-    ],
+    "baseUrl": "./",
     "paths": {
       "@/*": [
         "src/*"
       ]
     },
+    "types": [
+      "webpack-env"
+    ],
     "lib": [
       "esnext",
       "dom",
